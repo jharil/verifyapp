@@ -1,0 +1,21 @@
+.buttonComponent{
+    background-color: #1890FF;
+    border: none;
+    color: white;
+    padding: 11px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 0;
+    &:hover{
+        opacity: 0.9;
+        box-shadow: 0px 4px 4px rgba(162, 162, 162, 0.25);
+    }
+    &:disabled {
+        background: #dddddd;
+        cursor: no-drop;
+    }
+}

@@ -1,0 +1,63 @@
+.main {
+  background-color: #EA6364;
+  background:linear-gradient(rgba(33, 150, 243, 0.26) 100%, rgba(0, 0, 0, 0.7) 100%), url('../../img/peru.jpg');
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20px;
+  &-container {
+    background: white;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1256px;
+    border-radius: 4px;
+    padding-bottom: 30px;
+    &-header {
+      text-align: center;
+      padding: 50px 30px 0;
+      max-width: 660px;
+      margin: 0 auto;
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        @media (max-width: 570px) {
+          word-break: break-all;
+        }
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    &-block {
+      margin: 50px 20px 20px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 300px;
+      @media (max-width: 970px) {
+        grid-template-columns: 1fr 300px;
+      }
+      @media (max-width: 750px) {
+        grid-template-columns: auto;
+      }
+      &-left {
+        display: grid;
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+.modal {
+  &--success{
+    font-size: 20px;
+    text-align: center;
+    color: #1890FF;
+  }
+  &--danger{
+    font-size: 20px;
+    text-align: center;
+    color: #EA6364;
+  }
+}

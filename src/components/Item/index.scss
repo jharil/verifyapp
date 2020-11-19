@@ -1,0 +1,68 @@
+.componentItem{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 7px #E5E5E5;
+  border-radius: 4px;
+  &-identify {
+    position: relative;
+    display: grid;
+    padding: 15px 15px 15px 20px;
+    grid-gap: 5px;
+    span.title {
+      color: #1890FF;
+      font-weight: 300;
+      @media (max-width: 450px) {
+        font-size: 12px;
+      }
+    }
+    .link {
+      color: #717171;
+      font-size: 23px;
+      text-decoration: none;
+      width: fit-content;
+      @media (max-width: 570px) {
+        word-break: break-all;
+      }
+      @media (max-width: 450px) {
+        font-size: 15px;
+      }
+    }
+    span.provider {
+      color: #A3A3A3;
+      font-size: 12px;
+    }
+
+    &::after{
+      position: absolute;
+      border-radius: 4px 0px 0px 4px;
+      background: #1890FF;
+      content: ' ';
+      height: 100%;
+      z-index: 1;
+      width: 10px;
+      left: 0;
+      top: 0;
+    }
+    &--red {
+      span.title {
+        color: #EA6364;
+        font-weight: 300;
+      }
+      &::after {
+        background: #EA6364;
+      }
+    }
+  }
+  &-actions {
+    display: flex;
+    &--edit {
+      font-size: 12px;
+      cursor: pointer;
+    }
+    &--delete {
+      font-size: 12px;
+      cursor: pointer;
+      padding-left: 5px;
+      color: red;
+    }
+  }
+}
